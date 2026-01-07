@@ -137,7 +137,7 @@ body {
 /* UI Designs */
 .designs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 14px;
 }
 
@@ -200,3 +200,54 @@ ul {
         height: 140px;
     }
 }
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Track that moves left/right */
+.carousel-track {
+    display: flex;
+    gap: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Design cards inside carousel */
+.carousel-track .design {
+    flex: 0 0 calc((100% - 28px) / 3); /* 3 images visible */
+    height: 140px; /* screen-like height */
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Left/Right buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+
