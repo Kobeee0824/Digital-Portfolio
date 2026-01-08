@@ -22,7 +22,7 @@ body {
 /* ---------------- Header ---------------- */
 .profile-header {
     position: relative;
-    background-image: url("https://i.pinimg.com/1200x/e2/ea/2f/e2ea2f36a4acfb259a83c2149e17ec4c.jpg");
+    background-image: url("https://i.pinimg.com/1200x/78/79/01/787901f54bfc5cdadc6a51b210713fc0.jpg");
     background-size: cover;
     background-position: center;
     padding: 48px;
@@ -203,8 +203,8 @@ ul {
 
 /* Carousel container */
 .carousel-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Track that moves left/right */
@@ -225,29 +225,40 @@ ul {
 
 /* Left/Right buttons */
 .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .carousel-btn.left {
-    left: 10px;
+  left: 10px;  /* Added left positioning */
 }
 
 .carousel-btn.right {
-    right: 10px;
+  right: 10px; /* Added right positioning */
 }
 
 .carousel-btn:hover {
     background: rgba(0,0,0,0.8);
 }
 
+.university-logos {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    justify-content: center;  /* Center the logos horizontally */
+}
+
+.university-logos img {
+    width: 100px;
+    height: auto;  /* Maintain aspect ratio */
+}
 
